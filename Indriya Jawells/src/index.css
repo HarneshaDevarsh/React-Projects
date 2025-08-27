@@ -1,0 +1,267 @@
+@import "tailwindcss";
+
+.navbar {
+    background-color: rgba(255, 241, 227, 0.7);
+}
+
+.nav_01 {
+    display: none;
+}
+
+.navbar li {
+    font-weight: 400;
+}
+
+.nav .li_1:hover {
+    border-bottom: 2px solid red;
+}
+
+.nav_1 {
+    display: none;
+    padding: 15px;
+    line-height: 2;
+    margin-left: -15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 234, 212);
+    background-color: rgb(255, 241, 227);
+}
+
+.nav li:hover .nav_1 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.carousel {
+    margin-top: 80px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 86.5vh;
+    object-fit: cover;
+}
+
+.carousel .left {
+    background-color: white;
+    color: gray;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.carousel .left:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.carousel .right {
+    background-color: white;
+    color: gray;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.carousel .right:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.products .icon {
+    border: 2px solid rgb(250, 219, 207);
+    background-color: rgb(255, 241, 227);
+    color: rgb(2, 46, 112);
+    font-size: 18px;
+    padding: 13px;
+    border-radius: 100%;
+}
+
+.products .icons p {
+    color: rgb(2, 46, 112);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.products .img_1 {
+    background-color: rgb(255, 241, 227);
+}
+
+.products .button {
+    border: 1.5px solid rgb(6, 48, 120);
+    color: rgb(6, 48, 120);
+    cursor: pointer;
+}
+
+.products .button:hover {
+    background-color: rgb(6, 48, 120, 0.08);
+}
+
+.sections .first {
+    background-image: url("https://www.indriya.com/content/dam/noveljewels/websites/images/plp/ParallaxPattern1.jpg");
+    height: 510px;
+    background-attachment: fixed;
+}
+
+.sec_2 .section_2 {
+    background-color: rgb(255, 249, 242);
+    padding: 50px;
+}
+
+.sec_2 .section_2 button {
+    background-color: rgb(2, 46, 112);
+    cursor: pointer;
+}
+
+.sec_2 .section_2 button:hover {
+    background-color: rgb(2, 67, 166);
+}
+
+.items {
+    background-color: rgb(255, 249, 242);
+}
+
+
+@media (max-width: 768px) {
+    .nav_01 {
+        display: block;
+        position: relative;
+    }
+
+    .nav_02 {
+        display: none;
+        margin-top: 20px;
+        position: absolute;
+        padding: 5px 15px;
+        line-height: 2;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 234, 212);
+        background-color: rgb(255, 241, 227);
+    }
+
+    .nav_01:hover .nav_02 {
+        display: block;
+    }
+
+    .nav_0 {
+        display: none;
+    }
+
+    .carousel {
+        margin-top: 80px;
+    }
+
+    .carousel img {
+        height: 91vh;
+    }
+
+    .rate {
+        margin-left: -30px;
+    }
+
+    .items {
+        margin-top: 450px;
+    }
+
+    .loginSystem .lg_1 {
+        margin-left: 150px;
+    }
+}
+
+
+
+@media (min-width:424px) and (max-width: 768px) {
+    .carousel img {
+        height: 84vh;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .rate {
+        margin-left: -80px;
+    }
+
+    .sec_1 h1 {
+        font-size: 40px;
+    }
+
+    .sec_2 .section_2 {
+        display: block;
+        width: 90%;
+    }
+
+    .sec_2 .section_2 .first_1 {
+        width: 100%;
+    }
+
+    .sec_2 .section_2 .first_2 {
+        width: 90%;
+        margin-top: 10px;
+        margin-left: -35px;
+    }
+
+    .items {
+        margin-top: 590px;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar img {
+        height: 30px;
+    }
+
+    .carousel {
+        margin-top: 70px;
+    }
+
+    .carousel img {
+        height: 86vh;
+    }
+
+    .content h1 {
+        font-size: 25px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    .sections .first {
+        height: 410px;
+    }
+
+    .rate {
+        margin-left: -100px;
+    }
+
+    .sec_1 h1 {
+        font-size: 30px;
+    }
+
+    .sec_2 .section_2 {
+        display: block;
+        margin-top: -50px;
+        width: 90%;
+    }
+
+    .sec_2 .section_2 .first_1 {
+        width: 100%;
+    }
+
+    .sec_2 .section_2 .first_2 {
+        width: 90%;
+        margin-top: 10px;
+        margin-left: -40px;
+    }
+
+    .items {
+        margin-top: 770px;
+    }
+
+}

@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'airbnb';
+    src: url('./assets/Airbnb/AirbnbCereal_W_Md.otf');
+}
+
+@font-face {
+    font-family: 'airbnb-lt';
+    src: url('./assets/Airbnb/AirbnbCereal_W_lt.otf');
+}
+
+
+body{
+    font-family: 'airbnb';
+}
+
+.footer a li{
+    font-family: 'airbnb-lt';
+    line-height: 2;
+}
+
+.ng_1{
+    display: flex;
+}
+
+
+
+/* -------------------------------------------------------------------- */
+
+/* Media Query */
+
+@media (min-width: 426px) and (max-width: 769px) {
+    .navbar img {
+        height: 30px;
+    }
+
+    .navbar .nav_1 {
+        font-size: 14px;
+    }
+
+    .navbar .nav_2 {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 426px) {
+    .navbar {
+        display: block;
+        width: 90%;
+        justify-items: center;
+    }
+
+    .navbar img {
+        height: 30px;
+    }
+
+    .navbar .nav_1 {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .navbar .nav_2 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .f1 li{
+        font-size: 11px;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .navbar {
+        display: block;
+        width: 100%;
+        justify-items: center;
+    }
+
+    .navbar img {
+        height: 30px;
+    }
+
+    .navbar .nav_1 {
+        font-size: 10px;
+        width: 96%;
+        margin-top: 20px;
+    }
+
+    .navbar .nav_2 {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .f1 li{
+        font-size: 9px;
+    }
+}

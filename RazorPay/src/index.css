@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'inter';
+    src: url('/src/Components/Inter/static/Inter_18pt-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'humane_thin';
+    src: url('/src/Inter/Humane/Humane-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'rightman';
+    src: url('/src/Inter/rightman_signature/RightmanSignature.otf');
+}
+
+body{
+    font-family: 'inter';
+    background-color: rgb(240, 244, 250);
+    overflow-x: hidden;
+}
+
+.second h1{
+    font-family: 'humane_thin';
+    line-height: 118px;
+    font-weight: 500;
+}
+
+.second span{
+    font-family: 'rightman';
+}
+
+.third .third_1 {
+    margin-top: -40px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 1s ease, visibility 4s ease;
+}
+
+.third:hover .third_1 {
+    opacity: 1;
+     transform: translateY(0);
+    visibility: visible;
+}
+
+.ninth{
+    background-color: rgb(3, 42, 61);
+}
+
+.ninth h3{
+    word-spacing: 20px;
+    color: rgb(3, 42, 61);
+}
+
+.ninth h1{
+    line-height: 1.5;
+}
+
+.card_1{
+    position: relative;
+    width: 33%;
+    height: 420px;
+    perspective: 1000px;
+}
+
+.card1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card_1 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card_1 .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card1:hover{
+    transform: rotateY(180deg);
+}
+
